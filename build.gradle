@@ -110,19 +110,19 @@ configure(javaprojects) {
 // Publishing configuration
 
 // Add the ability to release to Maven Central from Gradle without dealing with Nexus UI
-apply plugin: "io.codearte.nexus-staging"
+//apply plugin: "io.codearte.nexus-staging"
 
-nexusStaging {  
-  username = ossrhUsername
-  password = ossrhPassword
-}
+//nexusStaging {  
+//  username = ossrhUsername
+//  password = ossrhPassword
+//}
 
 // Apply the configuration for the published projects only
-configure(publishprojects) {
+//configure(publishprojects) {
 
   // Apply the gradle file specific to all published projects
-  apply from: "$rootDir/gradle/publish-projects.gradle"
-}
+//  apply from: "$rootDir/gradle/publish-projects.gradle"
+//}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
